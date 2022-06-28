@@ -3,7 +3,7 @@ body {
   background-image: url("images/pagebkg-christian-wiediger.jpg");
   background-size: contain;
   display: grid;
-  grid: 1fr 1fr 5fr 2fr 1fr / repeat(10, 1fr);
+  grid: 1fr 1fr 5fr 1fr 2fr 1fr / repeat(10, 1fr);
   color: rgb(237, 214, 38);
 }
 
@@ -20,29 +20,73 @@ body {
 }
 
 .gameboard {
-  grid-area: 3/2/4/10;
+  grid-area: 3/2/5/10;
   background-image: url("images/galaxy.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameplay {
+  background-color: black;
+  max-width: 50%;
+  max-height: 50%;
+  text-align: center;
+  display: none;
 }
 
 .playership {
-  justify-items: center;
+  position: absolute;
+  top: 30%;
+  left: 0;
 }
-.play {
-  grid-area: 3/5/4/7;
+
+.enemyship {
+  position: absolute;
+  top: 30%;
+  right: 0;
 }
 
 .playerstats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
   background-color: black;
+  color: white;
 }
 
-.enemystats {
+.alienstats {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
   background-color: black;
+  color: white;
+}
+
+.battle {
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+.retreat {
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 40%;
 }
 
 .gameflow {
   background-color: black;
-  grid-area: 4/2/5/10;
+  color: white;
+  grid-area: 5/2/6/10;
+  max-height: 144px;
+  overflow: auto;
 }

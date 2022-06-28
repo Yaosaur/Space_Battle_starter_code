@@ -12,13 +12,31 @@
     <div class="title">Space Wars</div>
     <div class="instructions">Instructions</div>
     <div class="gameboard">
+      <div class="gameplay">
+        Welcome aboard Captain. As you know, Earth is getting invaded by a swarm
+        of alien ships. Thankfully the aliens are not very smart and will only
+        deploy one ship at a time. Press Battle to begin. After each round, if
+        you make it out alive, you can choose to continue or retreat. Destroy
+        all six ships for Earth to see another day!
+      </div>
       <div class="playership"><img src="images/playership.gif" alt="" /></div>
       <div class="enemyship"><img src="images/enemyship1.gif" alt="" /></div>
-      <div class="playerstats"></div>
-      <div class="enemystats"></div>
+      <div class="playerstats">
+        <span class="playerName">Player Ship</span>
+        <span class="playerHull">Hull: 20</span>
+        <span class="playerFirepower">Firepower: 5</span>
+        <span class="playerAccuracy">Accuracy: 0.7</span>
+      </div>
+      <div class="alienstats">
+        <span class="alienShip"></span>
+        <span class="alienHull"></span>
+        <span class="alienFirepower"></span>
+        <span class="alienAccuracy"></span>
+      </div>
+      <div class="battle">Battle</div>
+      <div class="retreat">Retreat</div>
     </div>
-    <div class="play">Play!</div>
-    <div class="gameflow"></div>
+    <div class="gameflow">Battle Log</div>
   </body>
   <script src="app.js"></script>
 </html>

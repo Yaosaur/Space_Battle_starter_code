@@ -4,15 +4,11 @@ Space Wars is a point and click text based single player game where the main goa
 
 ## Demo of the Tutorial
 
----
-
 ![Demo of the Tutoria](images/spacewars%20demo.gif)
 
 There is a built in instructions hover on the general flow of the game. The tutorial round consists of a fleet of 6 ships. After defeating all 6 ships, the player can choose to play the tutorial again or start the real game. On the bottom of the main game board, there is a log recording the outcome of each fight.
 
 ## Features
-
----
 
 - Mouse over instructions
 - Battle and Retreat buttons to continue the game or quit
@@ -24,15 +20,11 @@ There is a built in instructions hover on the general flow of the game. The tuto
 
 ## Technologies Used
 
----
-
 - HTML
 - CSS
 - JavaScript
 
 ## Installation Instructions
-
----
 
 Currently, the game can only be played locally on the users computer. In order to do that, you the best way is to download the file from the [github](https://github.com/Yaosaur/Space_Battle_starter_code) repository.
 
@@ -43,8 +35,6 @@ Once downloaded, please extract the zip files using a freeware such [7-Zip](http
 ![Index file](images/index.jpg)
 
 ## Credits
-
----
 
 - Sprites from DreamRunner [PixelJoint](https://pixeljoint.com/)
 - Gifs from [Giphy](https://giphy.com/)

@@ -1,22 +1,30 @@
 body {
-  min-height: 100vh;
-  background-image: url("images/pagebkg-christian-wiediger.jpg");
-  background-size: contain;
+  max-height: 100vh;
+  background-image: url("images/bkg.gif");
+  background-size: 33%;
   display: grid;
   grid: 1fr 1fr 5fr 1fr 2fr 1fr / repeat(10, 1fr);
-  color: rgb(237, 214, 38);
+  color: rgb(254, 252, 215);
+  overflow: hidden;
+}
+
+.header {
+  grid-area: 2/2/3/10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Rubik Moonrocks", cursive;
 }
 
 .title {
-  grid-area: 2/5/3/7;
-}
-
-.aboutme {
-  grid-area: 2/2/3/3;
+  justify-self: center;
+  font-size: 4.3vw;
 }
 
 .instructions {
-  grid-area: 2/9/3/10;
+  font-size: 2vw;
+  position: relative;
+  z-index: 1;
 }
 
 .gameboard {
@@ -29,26 +37,95 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
+  margin-top: -100px;
 }
 
 .gameplay {
-  background-color: black;
   max-width: 50%;
-  max-height: 50%;
+  max-height: 15%;
   text-align: center;
+  font-family: "VT323", monospace;
+  background-image: url("images/logbg.gif");
+  padding: 7%;
+  opacity: 75%;
   display: none;
+}
+
+.playagain,
+.newgameplay,
+.shop,
+.endGame {
+  max-width: 50%;
+  max-height: 65%;
+  text-align: center;
+  font-family: "VT323", monospace;
+  background-image: url("images/logbg.gif");
+  padding: 5%;
+  opacity: 75%;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: none;
+  overflow: hidden;
+  gap: 15px;
+}
+
+.nextbattle,
+.close,
+.close2 {
+  background-color: blue;
+  font-family: "VT323", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 2vw;
+  border-radius: 25px;
+}
+
+.close2 {
+  position: absolute;
+  bottom: 25%;
+}
+
+.simulator {
+  background-color: green;
+  font-family: "VT323", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 2vw;
+  border-radius: 25px;
+}
+
+.abort {
+  background-color: red;
+  font-family: "VT323", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 2vw;
+  border-radius: 25px;
+}
+
+.explanation,
+.explanation2 {
+  min-width: 100vw;
+  text-align: center;
 }
 
 .playership {
   position: absolute;
-  top: 30%;
-  left: 0;
+  top: 50%;
+  left: 5%;
 }
 
 .enemyship {
   position: absolute;
-  top: 30%;
-  right: 0;
+  top: 50%;
+  right: 5%;
 }
 
 .playerstats {
@@ -58,6 +135,7 @@ body {
   z-index: 1;
   background-color: black;
   color: white;
+  font-family: "VT323", monospace;
 }
 
 .alienstats {
@@ -67,26 +145,92 @@ body {
   z-index: 1;
   background-color: black;
   color: white;
+  font-family: "VT323", monospace;
 }
 
 .battle {
-  background-color: green;
+  background-color: blue;
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: 38%;
+  font-family: "VT323", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 3vw;
+  border-radius: 25px;
 }
 
 .retreat {
   background-color: red;
   position: absolute;
   bottom: 0;
-  right: 40%;
+  right: 38%;
+  font-family: "VT323", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 3vw;
+  border-radius: 25px;
+  display: none;
+}
+
+#theBomb {
+  background-color: red;
+  font-family: "VT323", monospace;
+  width: 8vw;
+  height: 3vw;
+  border-radius: 25px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 
 .gameflow {
-  background-color: black;
+  background-image: url("images/logbg.gif");
   color: white;
   grid-area: 5/2/6/10;
   max-height: 144px;
   overflow: auto;
+  font-family: "VT323", monospace;
+  text-align: center;
+  opacity: 75%;
+}
+
+.gameflow::-webkit-scrollbar {
+  background-color: black;
+}
+
+.gameflow::-webkit-scrollbar-thumb {
+  background-color: blue;
+}
+
+.UITop {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logTitle {
+  position: fixed;
+  left: 47%;
+}
+
+.round,
+.scraps {
+  display: none;
+}
+
+.totaldestroyed {
+  display: none;
+  justify-self: self-start;
+}
+
+p {
+  margin: 0;
 }

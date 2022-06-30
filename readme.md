@@ -32,7 +32,7 @@ Currently, the game can only be played locally on the users computer. In order t
 
 Once downloaded, please extract the zip files using a freeware such [7-Zip](https://www.7-zip.org/). Afterwards, double click on the index file in the folder and you are ready to play.
 
-![Index file](images/index.jpg)
+![Index file](images/Index.jpg)
 
 ## Credits
 
